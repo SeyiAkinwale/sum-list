@@ -38,4 +38,5 @@ int main()
   c.next = &d;
   d.next = &e;
   cout<<sumList(a);
+  return 0;
 }
