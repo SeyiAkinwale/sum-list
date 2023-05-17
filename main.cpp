@@ -13,6 +13,7 @@ class Node
     }
 };
 
+//iterative worked
 int sumList(Node * head)
 {
   int sum = 0;
