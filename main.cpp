@@ -37,6 +37,6 @@ int main()
   b.next = &c;
   c.next = &d;
   d.next = &e;
-  std::cout<<sumList(a);
+  std::cout<<sumList(&a);
   return 0;
 }
