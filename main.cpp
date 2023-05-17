@@ -13,13 +13,12 @@ class Node
     }
 };
 
-//recursive
+//recursive works
 int sumList(Node * head)
 {
   int sum = 0;
   if(head==nullptr) return sum;
-  sum+=head->val;
-  sumList(head->next);
+  return head->val + sumList(head->next);
 }
 
 int main() 
