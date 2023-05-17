@@ -13,7 +13,7 @@ class Node
     }
 };
 
-//recursive works
+//recursive 
 int sumList(Node * head)
 {
   int sum = 0;
