@@ -13,17 +13,13 @@ class Node
     }
 };
 
-//iterative worked
+//recursive
 int sumList(Node * head)
 {
   int sum = 0;
-  Node * current=head;
-  while(current!=nullptr)
-  {
-    sum+=current->val;
-    current=current->next;
-  }
-  return sum;
+  if(head==nullptr) return sum;
+  sum+=head->val;
+  sumList(head->next);
 }
 
 int main() 
